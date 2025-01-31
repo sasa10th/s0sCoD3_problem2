@@ -73,12 +73,12 @@
             const fileContent = `
 #include <bits/stdc++.h>
 using namespace std;
-struct node {
+struct node{
     char str[12];
     int arr[5];
-    node() {
-        memset(arr, 0, sizeof arr);
-        memset(str, 0, sizeof str);
+    node(){
+        memset(arr,0,sizeof arr);
+        memset(str,0,sizeof str);
     }
 };
 bool check1(const char *str){
@@ -148,11 +148,11 @@ void output(const char *str){
 	return;
 }
 int main(){
-	//Run this code at compilers such as ideone
-	node data;
-    int *arr = data.arr;
-    char *str = data.str;
-    scanf("%s", str);
+	//Ideone Recommended!!
+	node Node;
+    int *arr=Node.arr;
+    char *str=Node.str;
+    scanf("%s",str);
 	if(!check1(str)){
 		printf("Invalid Input");
 	}
